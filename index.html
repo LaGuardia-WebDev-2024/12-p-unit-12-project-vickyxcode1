@@ -21,6 +21,23 @@ Select ONE Additional
     <title>Unit 12 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
+  
+  <style>
+  
+    .photo{
+      height:200px;
+      width: 200px;
+      margin: 10px;
+      border: 5px solid;
+      background-color: white;
+      
+      
+      
+      
+    }
+  
+  </style>
+  
   <body>
     <button id="mem1-button">Memory #1</button>
     <button id="mem2-button">Memory #2</button>
@@ -28,18 +45,45 @@ Select ONE Additional
     <h1>My Top 3 Memories of <span>This Year</span></h1>
     <ol>
       <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem1">18th Birthday #1</h3>
+        <p>My most recent and enjoyable birthday</p>
+        <img
+             id = "pinky"
+             class = "photo"
+             src = "https://cdn.glitch.global/ba9ac484-ff5f-40e9-af22-c452af7db296/IMG_8266.jpg?v=1746546027717"
+             width = "100"
+             style = "display: none"
+             > 
+      <p class="wtv">
+        yoo
+        </p>
       </li>
 
       <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem2">4th of July 2024 #2</h3>
+        <p>A 4th of July part/ going away party for me going to Brown</p>
+        <img
+             id = "fourth"
+             class = "photo"
+             src = "https://cdn.glitch.global/ba9ac484-ff5f-40e9-af22-c452af7db296/IMG_8270.jpg?v=1746546038940"
+             width = "100"
+             style = "display: none"
+             > 
       </li>
 
       <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <h3 id="mem3">Senior Sunset #3</h3>
+        <p>One of the best laguardia senior events</p>
+        <img
+             id = "sunset"
+             class = "photo"
+             src = "https://cdn.glitch.global/ba9ac484-ff5f-40e9-af22-c452af7db296/IMG_8269.jpg?v=1746546034245"
+             width = "100"
+             style = "display: none"
+             > 
+         <p class="wtv">
+        yoo
+        </p>
       </li>
     </ol>
 
@@ -47,15 +91,22 @@ Select ONE Additional
     <script>
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple");
+        $("#pinky"). show (2000);
       });
 
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
+         $("#fourth"). show (2000);
       });
 
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
+        $("#sunset"). show (2000);
+      
       });
+      
+      $("h1").text("TOP 3 MEMORIES OF SENIOR YEAR");
+      $(".wtv").text("Vicky Addition");
     </script>
   </body>
 </html>
